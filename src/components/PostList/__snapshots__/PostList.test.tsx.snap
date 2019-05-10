@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList component should render 1`] = `
+<section>
+  <Post
+    author="John Doe"
+    content="content"
+    key="1"
+    title="title"
+  />
+</section>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post component should render 1`] = `
+<article>
+  <header>
+    <h2>
+      title
+    </h2>
+    <h3>
+      author
+    </h3>
+  </header>
+  content
+</article>
+`;
