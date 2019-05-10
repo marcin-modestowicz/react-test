@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Provider } from 'mobx-react';
 import PostList from 'components/PostList';
-import './App.css';
+import RootStore from 'stores/RootStore';
 
 class App extends Component {
   render() {
     return (
-      <Provider>
+      <Provider rootStore={new RootStore()}>
         <PostList></PostList>
       </Provider>
     );

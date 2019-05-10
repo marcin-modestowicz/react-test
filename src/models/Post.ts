@@ -1,3 +1,5 @@
+import { observable } from 'mobx';
+
 export interface ApiData {
     userId: number;
     id: number;
@@ -6,10 +8,10 @@ export interface ApiData {
 }
 
 class Post {
-    userId: number;
-    id: number;
-    title: string;
-    body: string;
+    @observable userId: number;
+    @observable id: number;
+    @observable title: string;
+    @observable body: string;
 
     constructor(apiData: ApiData) {
         const {

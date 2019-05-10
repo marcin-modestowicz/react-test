@@ -1,18 +1,19 @@
 import React from 'react';
+import './Post.scss';
 
 interface Props {
-    post: {
-        title: string;
-        author: string;
-        content: string;
-    }
+    title: string;
+    author: string;
+    content: string;
 }
 
-const Post = ({ post: { title, author, content }}): Props => (
+const Post = ({ title, author, content }: Props) => (
     <article>
         <header>
             <h2>{title}</h2>
+            <h3>{author}</h3>
         </header>
+        {content}
     </article>
 );
 

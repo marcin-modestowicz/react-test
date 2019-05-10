@@ -1,11 +1,13 @@
+import { observable } from "mobx";
+
 export interface ApiData {
     id: number;
     name: string;
 }
 
 class User {
-    id: number;
-    name: string;
+    @observable id: number;
+    @observable name: string;
 
     constructor(apiData: ApiData) {
         const {
